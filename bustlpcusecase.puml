@@ -1,0 +1,24 @@
+@startuml
+
+
+left to right direction
+skinparam packageStyle rectangle
+actor Player
+actor A.I
+
+
+rectangle HarvestMoonGame {
+A.I --|> (Generate Random Number 1-10)
+Player --|> (Guess)
+(Generate Random Number 1-10) -- (Number 5)
+(Number 5) -- (Restart The Game)
+(Guess) -- (Higher or Lower)
+(Generate Random Number 1-10) -- (Higher or Lower)
+(Higher or Lower) --(T)
+(Higher or Lower) --(F)
+(F) -- (LOSE)
+(T) -- (WIN)
+
+
+}
+@enduml
