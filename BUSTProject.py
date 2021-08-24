@@ -1,0 +1,39 @@
+""" Ezekiel M. Bustillo
+    DATALOGO LPC
+    Aug. 17, 2020
+    I have neither received nor provided any help on this (lab) activity,
+    nor have I concealed any violation of the Honor Code.
+"""
+import random  # Imports a random number
+
+Randomnum = random.randint(1, 10) # A random number would be chosen
+
+class instruction(): # The mechanics of the game
+     print("Guess if the number is higher or lower to 5")
+     print("If the random number is 5, restart the game")
+     print("Remember, you only got 1 try. Goodluck! \n")
+
+class guess(): # Conditions when guessing
+    pick= str(input("Enter 'Higher' or 'Lower' "))
+    if Randomnum == 5:
+        print ("Please Restart The Game")
+    if Randomnum >5 and pick =="Higher":
+        print ("You Win")
+    if Randomnum < 5 and pick =="Lower":
+        print ("You Win")
+    if Randomnum >5 and pick =="Lower":
+        print("You Lose")
+    if Randomnum<5 and pick=="Higher":
+        print("You Lose")
+
+if __name__ =='__main__':
+    toprint= guess()
+    print("The Random Number = ", Randomnum)
+    print(toprint)
+
+
+
+
+
+
+
