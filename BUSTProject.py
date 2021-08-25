@@ -15,7 +15,7 @@ def rangevalue() :
 
 def guess_number():
     """Adding or not adding limits to the guesses"""
-    while True:  # Finds if the user wants a guess limit
+    while True:  
         guesses_number = input("Add limit to your guesses? | 'yes' or 'no' |: ")
         if guesses_number == "yes" or guesses_number == "no":
             if guesses_number == "no":
@@ -60,7 +60,7 @@ def guessing(randomnum: int):
 
 def reset() :
     """Asks if player want to quit or continue the game before"""
-    while True:  # Checks if the user wants to quit the game
+    while True:  
         ending = input("Do you want to continue? | 'yes' or 'no' |: ")
         if ending == "no" or ending == "yes":
             if ending == "no":
