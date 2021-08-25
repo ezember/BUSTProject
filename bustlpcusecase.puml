@@ -1,0 +1,27 @@
+@startuml
+
+
+left to right direction
+skinparam packageStyle rectangle
+actor Player
+actor A.I
+
+
+rectangle HarvestMoonGame {
+
+Player -- (Start Game)
+Player -- (Guess)
+Player -- (Continue Game)
+Player -- (Exit Game)
+
+(Start Game) <|-- (Specify Number Range)
+(Start Game) <|-- (Specify Number Of Guesses)
+
+(Choose number) --|> (Specify Number Range)
+
+A.I -- (Choose number)
+
+
+
+}
+@enduml
